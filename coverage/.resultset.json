@@ -1,0 +1,35 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/tomasgarciamusic/Desktop/Makers/Week_4/bookmark_manager/app.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/tomasgarciamusic/Desktop/Makers/Week_4/bookmark_manager/spec/features/index_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1638803989
+  }
+}
