@@ -1,6 +1,7 @@
 # bookmark_manager
 The website will have the following specification:
 
+```
 * Show a list of bookmarks
 As an User,
 So I can check different bookmarks,
