@@ -45,3 +45,10 @@ I would only allow them their own bookmarks.
 DOMAIN MODEL
 
 <img width="500" alt="Screenshot 2021-12-06 at 14 53 51" src="https://user-images.githubusercontent.com/86299300/144867825-eb6d36aa-9fe0-469f-bc8b-64b10a2bc3d3.png">
+
+*Database set up instruction*
+* CREATE DATABASE <name>
+* Connect to database: \c <name>
+* CREATE TABLE bookmarks("column_1" "data_type_for_column_1",
+"column_2" "data_type_for_column_2",
+... ).
