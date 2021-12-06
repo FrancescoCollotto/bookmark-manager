@@ -1,8 +1,9 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/tomasgarciamusic/Desktop/Makers/Week_4/bookmark_manager/app.rb": {
+      "/Users/francesco/Makers/week4/bookmark_manager/app.rb": {
         "lines": [
+          1,
           1,
           1,
           null,
@@ -16,10 +17,48 @@
           null,
           null,
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
           null
         ]
       },
-      "/Users/tomasgarciamusic/Desktop/Makers/Week_4/bookmark_manager/spec/features/index_spec.rb": {
+      "/Users/francesco/Makers/week4/bookmark_manager/lib/bookmark.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/francesco/Makers/week4/bookmark_manager/spec/bookmark_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/francesco/Makers/week4/bookmark_manager/spec/features/bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/francesco/Makers/week4/bookmark_manager/spec/features/index_spec.rb": {
         "lines": [
           1,
           1,
@@ -30,6 +69,6 @@
         ]
       }
     },
-    "timestamp": 1638803989
+    "timestamp": 1638807558
   }
 }
