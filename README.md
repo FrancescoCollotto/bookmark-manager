@@ -52,3 +52,4 @@ DOMAIN MODEL
 * CREATE TABLE bookmarks("column_1" "data_type_for_column_1",
 "column_2" "data_type_for_column_2",
 ... ).
+  (\dt to see exist tables).
