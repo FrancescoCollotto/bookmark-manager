@@ -23,3 +23,5 @@ gem "simplecov-console", "~> 0.9.1"
 gem "rack", "~> 2.2"
 
 gem "webrick", "~> 1.7"
+
+gem "pg", "~> 1.2"

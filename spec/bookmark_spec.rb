@@ -2,7 +2,9 @@ require 'bookmark'
 
 describe Bookmark do
   it "returns the bookmarks" do
-    bookmark = Bookmark.all
-    expect(bookmark).to be_an_instance_of Array
+    bookmarks = Bookmark.all
+    expect(bookmarks).to include "http://www.makersacademy.com/"
+    expect(bookmarks).to include "http://www.google.com/"
+    expect(bookmarks).to include "http://www.destroyallsoftware.com"
   end
 end
