@@ -46,10 +46,28 @@ DOMAIN MODEL
 
 <img width="500" alt="Screenshot 2021-12-06 at 14 53 51" src="https://user-images.githubusercontent.com/86299300/144867825-eb6d36aa-9fe0-469f-bc8b-64b10a2bc3d3.png">
 
-*Database set up instruction*
-1. Connect to psql
-2. Create the database using the psql command CREATE DATABASE bookmark_manager;
-3. Connect to the database using the pqsl command \c bookmark_manager;
+## Database set up instruction
+
+1. In your terminal connect to psql
+```
+➜ psql
+```
+2. Create the database using the psql command
+```
+➜ CREATE DATABASE bookmark_manager;
+```
+3. Connect to the database using the pqsl command
+```
+➜ \c bookmark_manager;
+```
 4. Run the query we have saved in the file db/migrations/01_create_bookmarks_table.sql
-  
- (\dt to see exist tables).
+
+5. Create a test database using the psql command
+```
+➜ CREATE DATABASE bookmark_manager_test;
+```
+6. Connect to the test database using the pqsl command
+```
+➜ \c bookmark_manager_test;
+```
+7. Run the query we have saved in the file db/migrations/01_create_bookmarks_table.sql
