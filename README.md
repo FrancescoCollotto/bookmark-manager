@@ -10,7 +10,7 @@ I would to be able to list all the bookmarks.
 * Add new bookmarks
 As an User,
 So I can add new bookmark,
-I would like to be able to add bookmarks.
+I would like to be able to add a new bookmark.
 
 * Delete bookmarks
 As an User,
