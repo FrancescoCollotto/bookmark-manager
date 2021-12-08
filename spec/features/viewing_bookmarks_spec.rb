@@ -12,10 +12,5 @@ feature 'Bookmarks page' do
     expect(page).to have_content "http://www.google.com"
   end
 
-  scenario 'Able to add a new bookmark' do
-    visit('/bookmarks/new')
-    fill_in 'url', with: "https://www.bbc.co.uk/sport"
-    click_button "Submit"
-    expect(page).to have_content "https://www.bbc.co.uk/sport"
-  end
+
 end
