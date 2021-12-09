@@ -2,11 +2,10 @@ require 'bookmark'
 
 describe Bookmark do
   it 'returns a list of bookmarks' do
-    connection = PG.connect(dbname: 'bookmark_manager_test')
 
-    bookmark = Bookmark.create("http://www.makersacademy.com", "Makers Academy")
-    Bookmark.create("http://www.destroyallsoftware.com", "Destroy All Software")
-    Bookmark.create("http://www.google.com", "Google")
+    bookmark = Bookmark.create(url: "http://www.makersacademy.com", title: "Makers Academy")
+    Bookmark.create(url: "http://www.destroyallsoftware.com", title: "Destroy All Software")
+    Bookmark.create(url: "http://www.google.com", title: "Google")
  
     bookmarks = Bookmark.all
  
@@ -18,7 +17,8 @@ describe Bookmark do
   end
 
   it 'creates' do
-    Bookmark.create("www.bbc.co.uk")
-    expect(Bookmark.all).to include "www.bbc.co.uk"
+    bookmark = Bookmark.create(url: "www.bbc.co.uk", title: "BBCsport")
+    expect(bookmark.url).to eq "www.bbc.co.uk"
+    expect(bookmark.title).to eq "BBCsport"
   end
 end

@@ -16,7 +16,7 @@ class Bookmark
       conn = PG.connect( dbname: 'bookmark_manager' )
     end
     result = conn.exec( "SELECT * FROM bookmarks" ) 
-    result.map { |bookmark| Bookmark.new(bookmark['id'], bookmark['title'], bookmark['url']) }
+    result.map { |bookmark| Bookmark.new(id: bookmark['id'], title: bookmark['title'], url: bookmark['url']) }
   end
 
   def self.create(url:, title:)
@@ -25,7 +25,7 @@ class Bookmark
     else
       conn = PG.connect( dbname: 'bookmark_manager' )
     end
-      result = conn.exec( "INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}') RETURNING id, url, title" )
+      result = conn.exec( "INSERT INTO bookmarks (url, title) VALUES('#{url}', '#{title}') RETURNING id, url, title" )
       Bookmark.new(id: result[0]['id'], title: result[0]['title'], url: result[0]['url'])
   end
 end
