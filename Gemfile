@@ -25,3 +25,5 @@ gem "rack", "~> 2.2"
 gem "webrick", "~> 1.7"
 
 gem "pg", "~> 1.2"
+
+gem "sinatra-flash", "~> 0.3.0"

@@ -17,32 +17,37 @@ describe Bookmark do
   end
 
   it 'creates a bookmark' do
-    bookmark = Bookmark.create(url: "www.bbc.co.uk", title: "BBCsport")
-    expect(bookmark.url).to eq "www.bbc.co.uk"
+    bookmark = Bookmark.create(url: "https://www.bbc.co.uk", title: "BBCsport")
+    expect(bookmark.url).to eq "https://www.bbc.co.uk"
     expect(bookmark.title).to eq "BBCsport"
   end
 
+  it 'does not create a new bookmark if the URL is not valid' do
+    Bookmark.create(url: 'not a real bookmark', title: 'not a real bookmark')
+    expect(Bookmark.all).to be_empty
+  end
+
   it 'delete a bookmark' do
-    bookmark = Bookmark.create(url: "www.bbc.co.uk", title: "BBCsport")
+    bookmark = Bookmark.create(url: "https://www.bbc.co.uk", title: "BBCsport")
     Bookmark.delete(id: bookmark.id)
     expect(Bookmark.all).to_not include(bookmark)
     expect(Bookmark.all.length).to eq 0
   end
 
   it 'finds a bookmark by id' do
-    bookmark = Bookmark.create(url: "www.bbc.co.uk", title: "BBCsport")
+    bookmark = Bookmark.create(url: "https://www.bbc.co.uk", title: "BBCsport")
     found_bookmark = Bookmark.find(id: bookmark.id)
     expect(bookmark.title).to eq(found_bookmark.title)
     expect(bookmark.url).to eq(found_bookmark.url)
   end
 
   it 'updates the bookmark' do
-    bookmark = Bookmark.create(title: 'CNN', url: 'www.cnn.com')
-    updated_bookmark = Bookmark.update(id: bookmark.id, url: 'www.bbc.co.uk', title: 'BBC')
+    bookmark = Bookmark.create(title: 'CNN', url: 'https://www.cnn.com')
+    updated_bookmark = Bookmark.update(id: bookmark.id, url: 'https://www.bbc.co.uk', title: 'BBC')
 
     expect(updated_bookmark).to be_a Bookmark
     expect(updated_bookmark.id).to eq bookmark.id
     expect(updated_bookmark.title).to eq 'BBC'
-    expect(updated_bookmark.url).to eq 'www.bbc.co.uk'
+    expect(updated_bookmark.url).to eq 'https://www.bbc.co.uk'
   end
 end
