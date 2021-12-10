@@ -53,6 +53,31 @@
           null
         ]
       },
+      "/Users/francesco/Makers/week4/bookmark_manager/spec/database_connection_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/francesco/Makers/week4/bookmark_manager/spec/features/creating_bookmarks_spec.rb": {
         "lines": [
           1,
@@ -129,6 +154,6 @@
         ]
       }
     },
-    "timestamp": 1639159323
+    "timestamp": 1639163778
   }
 }
