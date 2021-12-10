@@ -28,4 +28,21 @@ describe Bookmark do
     expect(Bookmark.all).to_not include(bookmark)
     expect(Bookmark.all.length).to eq 0
   end
+
+  it 'finds a bookmark by id' do
+    bookmark = Bookmark.create(url: "www.bbc.co.uk", title: "BBCsport")
+    found_bookmark = Bookmark.find(id: bookmark.id)
+    expect(bookmark.title).to eq(found_bookmark.title)
+    expect(bookmark.url).to eq(found_bookmark.url)
+  end
+
+  it 'updates the bookmark' do
+    bookmark = Bookmark.create(title: 'CNN', url: 'www.cnn.com')
+    updated_bookmark = Bookmark.update(id: bookmark.id, url: 'www.bbc.co.uk', title: 'BBC')
+
+    expect(updated_bookmark).to be_a Bookmark
+    expect(updated_bookmark.id).to eq bookmark.id
+    expect(updated_bookmark.title).to eq 'BBC'
+    expect(updated_bookmark.url).to eq 'www.bbc.co.uk'
+  end
 end
