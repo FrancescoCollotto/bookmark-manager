@@ -16,9 +16,16 @@ describe Bookmark do
     expect(bookmarks.first.url).to eq 'http://www.makersacademy.com'
   end
 
-  it 'creates' do
+  it 'creates a bookmark' do
     bookmark = Bookmark.create(url: "www.bbc.co.uk", title: "BBCsport")
     expect(bookmark.url).to eq "www.bbc.co.uk"
     expect(bookmark.title).to eq "BBCsport"
+  end
+
+  it 'delete a bookmark' do
+    bookmark = Bookmark.create(url: "www.bbc.co.uk", title: "BBCsport")
+    Bookmark.delete(id: bookmark.id)
+    expect(Bookmark.all).to_not include(bookmark)
+    expect(Bookmark.all.length).to eq 0
   end
 end

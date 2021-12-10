@@ -26,6 +26,13 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -36,6 +43,22 @@
           1,
           1,
           1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/francesco/Makers/week4/bookmark_manager/spec/features/deleting_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
           1,
           1,
           null,
@@ -70,6 +93,6 @@
         ]
       }
     },
-    "timestamp": 1639144365
+    "timestamp": 1639152230
   }
 }
